@@ -102,6 +102,11 @@ Status labels:
   - Meaning: the risk that after a serious failure the system no longer preserves observation, control, rollback, authority, or another acceptable attempt. In this repo, it is used as an engineering check before high-consequence action, without requiring wholesale agreement with the source's ASI conclusions.
   - Canonical note: `concepts/error-handling-and-fault-tolerance.md`.
 
+- Lacanian approach to programming language
+  - Status: local adaptation, exploratory.
+  - Meaning: a psychoanalytic lens for asking how programmers, reviewers, users, and AI agents are organized by signifiers such as names, tests, diagrams, prompts, dashboards, and formal artifacts; useful only when it improves a concrete programming diagnosis.
+  - Canonical note: `concepts/lacanian-approach-to-programming-language.md`.
+
 - Let it crash
   - Status: standard Erlang slogan, locally qualified.
   - Meaning: Armstrong's Erlang fault-tolerance slogan: when an isolated worker cannot safely continue, let it fail quickly and let linked supervisors handle restart, fallback, escalation, and logging. It is not a license to ignore expected domain errors, untrusted inputs, irreversible side effects, or safety-critical invariants.
