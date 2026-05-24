@@ -1,0 +1,4 @@
+interface:
+  display_name: "Plan Review"
+  short_description: "Review completed plan-driven work"
+  default_prompt: "Use $plan-review to review the completed PLAN.md-driven work."

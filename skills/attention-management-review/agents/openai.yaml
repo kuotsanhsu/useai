@@ -1,0 +1,4 @@
+interface:
+  display_name: "Attention Management Review"
+  short_description: "Review routing, docs, and KB hierarchy"
+  default_prompt: "Use $attention-management-review to check whether this repo still manages attention well."
