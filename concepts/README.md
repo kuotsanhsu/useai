@@ -18,6 +18,7 @@ Relevant fields include philosophy, psychology, economics, psychoanalysis, compu
 - [Error Handling And Fault Tolerance](error-handling-and-fault-tolerance.md)
 - [Formal Attention And Linear Logic](formal-attention-linear-logic.md)
 - [Glossary](glossary.md)
+- [Lacanian Approach To Programming Language](lacanian-approach-to-programming-language.md)
 - [Mathematical Programming And State Estimation](mathematical-programming-state-estimation.md)
 - [Neuro-Symbolic AI](neuro-symbolic-ai.md)
 - [Programming Hyperreality](programming-hyperreality.md)
