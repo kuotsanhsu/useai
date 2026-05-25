@@ -58,7 +58,7 @@ This means:
 - `concepts/symbolic-reasoning-and-meaning.md`: rules as explicit inferential roles, not just labels.
 - `concepts/programming-hyperreality.md`: warning that generated artifacts can resemble reasoning without becoming evidence.
 
-## Open Questions
+## Research Directions
 
 - Which tasks only need fluent synthesis, and which need external symbolic structure?
 - When is an LLM explanation enough, and when must the claim be represented as facts, rules, tests, proofs, or interventions?

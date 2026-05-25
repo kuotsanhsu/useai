@@ -41,7 +41,7 @@ The shared theme is not ordinary focus in the psychological sense. It is discipl
 - Separate phases. Planning, execution, review, and promotion should not collapse into one undifferentiated activity.
 - Preserve cold reachability. Detail can stay cold if hot documents provide reliable pointers to it.
 
-## Open Questions
+## Research Directions
 
 - Can focusing provide a better formal model for when an agent should stop searching and start acting?
 - Can loci help define what counts as a stable address for a concept, rule, project, or observation?

@@ -1,3 +1,16 @@
+---
+id: retrieval-and-action-system
+kind: concept
+status: active
+source:
+  - repo-principle: "The knowledge base should support later retrieval and action, not archive every thought."
+tags: [knowledge-base, retrieval, action, attention-management]
+depends_on: [attention-management]
+related: [glossary, docs/attention-management.md, docs/documentation-style.md]
+used_by: [README.md, concepts/glossary.md]
+supersedes: []
+---
+
 # Retrieval and Action System
 
 Knowledge bases are useful here only when they help later work happen. The goal is not to store every thought. The goal is to make future retrieval and action easier.

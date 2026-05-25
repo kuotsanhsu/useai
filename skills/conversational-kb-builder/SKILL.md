@@ -1,6 +1,6 @@
 ---
 name: conversational-kb-builder
-description: Build an incremental, durable knowledge base through ongoing conversation. Use when Codex should capture evolving project understanding, user corrections, hypotheses, source notes, open questions, design decisions, tool limitations, or transferable lessons into checked-in Markdown while keeping evidence, inference, and action separate.
+description: Build an incremental, durable knowledge base through ongoing conversation. Use when Codex should capture evolving project understanding, user corrections, hypotheses, source notes, unresolved questions, design decisions, tool limitations, or transferable lessons into checked-in Markdown while keeping evidence, inference, and action separate.
 ---
 
 # Conversational KB Builder
@@ -19,7 +19,7 @@ Use this skill to turn conversation into a retrieval and action system. Prefer c
    - `source-note`: source artifact summary and provenance.
    - `hypothesis`: plausible but unconfirmed lead.
    - `decision`: confirmed design or process decision.
-   - `open-question`: unresolved issue needing user or source evidence.
+   - `unresolved-question`: unresolved issue needing user or source evidence. This is a durable KB status, not the planning agreement gate.
    - `todo`: tracked follow-up from review, planning, or implementation.
    - `tool-limitation`: observed limitation of a connector, script, model, or workflow.
    - `observed-lesson`: lesson from completed work that may guide future work.
@@ -31,7 +31,7 @@ Use this skill to turn conversation into a retrieval and action system. Prefer c
    When the conversation involves named people, papers, projects, historical claims, literature recognition, or claims about what a field believes, separate fact-checking from elaboration before writing durable notes.
    - Confirm what sources support.
    - Soften or correct overstrong claims.
-   - Mark user interpretation, assistant inference, and open questions explicitly.
+   - Mark user interpretation, assistant inference, and unresolved questions explicitly.
    - Add inline links near supported claims when the source matters.
    - If source access is incomplete, record the limitation instead of presenting the claim as settled.
 
@@ -82,7 +82,7 @@ For index files, keep front matter minimal. The body of the index is the relatio
 
 Default locations in this repo:
 
-- `projects/project-name/`: project maps, decisions, open questions, source notes, and improvement logs.
+- `projects/project-name/`: project maps, decisions, unresolved questions, source notes, and improvement logs.
 - `concepts/`: cross-project ideas, models, distinctions, and references.
 - `observations/`: descriptive records of thought and work patterns.
 - `skills/`: reusable workflows and protocols.
