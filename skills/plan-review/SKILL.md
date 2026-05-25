@@ -51,6 +51,8 @@ For review-only requests, report:
 
 For fix requests, make scoped edits. Prefer updating existing canonical files over creating more process docs.
 
+Do not automatically stage or unstage non-`PLAN.md` files during plan review. `PLAN.md` cleanup is the only index-state exception and should follow the planning skill.
+
 Before changing `skills/planning` or other high-level process rules, surface the proposed lesson and why it follows from the completed plan. If the user has not already asked for the edit, ask for feedback before making the durable process change.
 
 ## Promotion Rules

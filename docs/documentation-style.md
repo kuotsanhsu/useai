@@ -6,6 +6,8 @@ This document is the source of truth for repository documentation style. Keep `A
 
 Preserve status markers such as **UNCLEAR**, **TENTATIVE**, **TODO**, and **WIP**. Do not convert open questions, hypotheses, or rough notes into requirements without a confirmed decision.
 
+When open questions are resolved, remove the stale open-question section and write the answers into the appropriate normal location: prose, front matter, glossary, decision record, routing note, or workflow rule. Do not leave a resolved-question answer ledger unless the document is explicitly a retrospective or decision log.
+
 Separate:
 
 - confirmed facts;

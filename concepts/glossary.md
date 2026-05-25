@@ -21,6 +21,7 @@ Status labels:
 - External phrase: a phrase taken from an outside source and locally qualified here.
 - Local coinage: a phrase coined in this repo or conversation.
 - Local adaptation: an existing term, metaphor, or phrase adapted for this repo's use.
+- Stable local adaptation: a local adaptation that should be treated as stable terminology for future retrieval and writing.
 - Standard term or phrase: a term or phrase already recognized in a relevant field.
 - Repo workflow term: a local operating term for this repository.
 
@@ -45,6 +46,16 @@ Status labels:
   - Status: local adaptation.
   - Meaning: avoidable complexity introduced by applying patterns, architecture, infrastructure, or process as signs of sophistication rather than as justified responses to the problem. Examples include excessive OOP, premature microservices, and infrastructure layers whose operational burden exceeds the complexity they remove.
   - Canonical note: `concepts/accidental-complexity-and-ceremony.md`.
+
+- Code as pseudocode
+  - Status: local adaptation.
+  - Meaning: the use of actual programming, modeling, query, hardware-description, or proof languages as disciplined pseudocode when their semantics match the domain and their tools can execute, check, model-check, compile, or prove the artifact.
+  - Canonical note: `concepts/code-as-pseudocode-and-executable-specs.md`.
+
+- Code-as-pseudocode translation protocol
+  - Status: local adaptation.
+  - Meaning: the workflow of using a best-fit formal artifact as the semantic anchor, translating into a business-mandated target language, and validating preservation with properties, traces, fuzzing, differential tests, model checking, or translation validation.
+  - Canonical note: `concepts/code-as-pseudocode-translation-protocol.md`.
 
 - Dijkstra standard
   - Status: local adaptation.
@@ -91,6 +102,16 @@ Status labels:
   - Status: local coinage.
   - Meaning: a code-facing formal shadow, such as a call graph, causal graph, Datalog fact base, type model, spec, test, or trace. This was the later assistant framing, not the user's original phrase.
   - Canonical note: `concepts/code-simulacra-and-formal-shadows.md`.
+
+- Formal language as thought instrument
+  - Status: stable local adaptation.
+  - Meaning: the use of natural language, mathematical notation, programming languages, specification languages, proof assistants, or other symbolic media as tools that shape, revise, constrain, and communicate thought rather than merely record finished thought.
+  - Canonical note: `concepts/limits-of-language-and-formal-thought.md`.
+
+- Claim hygiene
+  - Status: local adaptation.
+  - Meaning: the practice of stating what a formal artifact, test, proof, model, benchmark, or source actually licenses, and not letting a narrow result imply a broader claim than the evidence supports.
+  - Canonical note: `concepts/soundness-validity-and-software-evidence.md`.
 
 - Hoare balance
   - Status: local adaptation.
@@ -153,6 +174,11 @@ Status labels:
   - Meaning: a knowledge base organized to make future retrieval and action easier, not merely to store thoughts.
   - Canonical note: `concepts/retrieval-and-action-system.md`.
 
+- Semantic anchor
+  - Status: local adaptation.
+  - Meaning: the best-fit formal artifact that fixes the intended meaning during translation, validation, or implementation in a less suitable target language.
+  - Canonical note: `concepts/code-as-pseudocode-translation-protocol.md`.
+
 - Simulacra of the code
   - Status: local adaptation.
   - Meaning: the user's original framing for code-facing representations that can start to stand in for code, system behavior, or understanding itself. Formal shadows are the useful checkable subset; simulacra names the broader risk that representation displaces reality contact.
@@ -167,3 +193,8 @@ Status labels:
   - Status: local adaptation.
   - Meaning: a disciplined fiction introduced to make an operation possible, then withdrawn or tested against reality.
   - Canonical note: `concepts/programming-hyperreality.md`.
+
+- Weakest real formal artifact
+  - Status: local adaptation.
+  - Meaning: the least elaborate programming, modeling, query, proof, simulation, or specification artifact whose semantics are strong enough to express and check the claim at hand.
+  - Canonical note: `concepts/code-as-pseudocode-and-executable-specs.md`.

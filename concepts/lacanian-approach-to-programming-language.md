@@ -275,7 +275,7 @@ Working register map:
 - Real: runtime failure, latency, race conditions, data drift, security exposure, undecidability, operational cost.
 - Symptom or sinthome: the recurring workaround, bug class, ritual, naming convention, or tool attachment that holds the system together when the official architecture does not.
 
-## Open Questions
+## Research Directions
 
 - Is there existing work in critical code studies, software studies, media theory, or psychoanalysis that connects these sources more rigorously?
 - Can this lens produce better engineering questions, or does it mostly rename ordinary ambiguity?

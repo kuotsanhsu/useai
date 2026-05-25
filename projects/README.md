@@ -10,3 +10,7 @@ A project area may include:
 - `improvement-log.md`: concrete improvement ideas and follow-up actions.
 
 Keep project notes oriented toward later action, not exhaustive record keeping.
+
+## Entries
+
+- [Neuro-Symbolic Causal Debugging](neuro-symbolic-causal-debugging/map.md)

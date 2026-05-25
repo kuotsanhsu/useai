@@ -37,12 +37,14 @@ Create or update `PLAN.md` when work crosses several areas, depends on sequencin
 
 Use `skills/planning/SKILL.md` to manage active plan-driven work.
 
+The planning skill owns the only automatic index exception: `PLAN.md` may be staged or unstaged inside the planning review loop; all other file staging state belongs to the user.
+
 Close out every completed `PLAN.md` sequence in this order:
 
+- Promote durable lessons into the appropriate doc, skill, project note, concept note, or observation.
 - If the work touched many files, run `skills/attention-management-review/SKILL.md` first so the plan review can use the meta-review result.
 - Run `skills/plan-review/SKILL.md`.
 - Remove `PLAN.md` or shrink it to live unresolved work.
-- Promote durable lessons into the appropriate doc, skill, project note, concept note, or observation.
 
 ## Documentation Sync
 

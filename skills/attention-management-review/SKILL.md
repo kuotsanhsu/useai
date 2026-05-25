@@ -36,7 +36,22 @@ Use this skill as the repository meta-review. Keep the repository usable under a
 
 6. Check file purpose and reachability. New files should have an obvious bucket, purpose, and retrieval path. Do not delete or move files solely because they look weakly referenced; record the uncertainty or ask if ownership is unclear.
 
-7. Report findings first for review-only requests. For fix requests, make scoped edits that reduce drift or ambiguity.
+7. Check for unexpected unresolved open questions, open decisions, or ambiguous ownership that should have been caught by planning. Treat meta-review as a late safeguard, not the normal place to manage planning questions. Ask the user to resolve them, explicitly defer them, or restart planning if the issue changes scope. When open questions have been resolved, verify that the stale open-question section was removed and the answers were written into the appropriate normal location instead of left as a resolved-question ledger.
+
+8. Check whether the reviewed scope is large, cross-cutting, multi-turn, source-heavy, or order-dependent. If so, use `skills/planning/SKILL.md` and temporary `PLAN.md` coordination instead of continuing as an ad hoc review.
+
+9. Check for accidental automatic index changes. Only `PLAN.md` may be staged or unstaged by the agent as part of the planning loop. Durable docs, skills, concepts, source files, and final outputs must not be automatically staged or unstaged; preserve user-controlled index state.
+
+10. Report findings first for review-only requests. For fix requests, make scoped edits that reduce drift or ambiguity.
+
+## Whole Project Mode
+
+Use this mode when the user asks for a whole-project meta-review.
+
+- Treat the review as deep by default; use `skills/planning/SKILL.md` and `PLAN.md` before execution.
+- Review all non-ignored files present in the worktree, including tracked, staged, unstaged, and untracked files. Treat `.gitignore` as the explicit exclusion boundary.
+- Use read-only agents for parallel audits when that can speed up docs, skills, concepts, projects, observations, or worktree-hygiene review.
+- Make scoped fixes automatically when findings are clear, but do not automatically stage or unstage non-`PLAN.md` files.
 
 ## Review Checklist
 
@@ -48,6 +63,10 @@ Use this skill as the repository meta-review. Keep the repository usable under a
 - Broad work uses `PLAN.md` only as temporary coordination.
 - Planning and plan-review behavior is routed through `skills/planning` and `skills/plan-review`.
 - After broad plan-driven work touches many files, a meta-review checks whether high-level mandates and insights are captured, refined, and highlighted.
+- Large, cross-cutting, multi-turn, source-heavy, or order-dependent scopes are routed through `skills/planning/SKILL.md` and `PLAN.md`.
+- Open questions and open decisions are surfaced to the user for resolution or explicit deferral.
+- Resolved open questions are folded into the right durable prose, metadata, glossary, decision record, routing note, or workflow rule; stale open-question sections are removed.
+- Only `PLAN.md` is automatically staged or unstaged, and only as part of the planning review loop; all other files keep the user's existing index state.
 - Markdown follows the CPU memory hierarchy analogy: hot information is short and prominent; colder information is detailed but retrievable.
 - Durable lessons are promoted out of temporary plans into docs, skills, project notes, concept notes, or observations.
 - Uncertainty remains visible instead of becoming a hidden requirement.
