@@ -114,6 +114,16 @@ Notes, outlines, and draft thoughts in this repository are treated as provisiona
 
 The goal is not to polish away uncertainty. The goal is to make partially formed thinking easier to inspect, extend, and develop.
 
+## Project Inspiration
+
+This repository is shaped by a few connected sources and questions:
+
+- Jason Cheng's recommendations to read Vijay Janapa Reddi's ["English Is a Programming Language"](https://vijay.seas.harvard.edu/blog/english-is-pl) and Vaishak Belle and Gary Marcus's ["The Future Is Neuro-Symbolic: Where Has It Been, and Where Is It Going?"](https://doi.org/10.1609/aaai.v40i48.42130).
+- A realization that formal methods and mathematics can offload attention and decisions reliably to arithmetic, processes, and computers, while language remains powerful but limited.
+- Studies of Frege, Godel, Hoare, Dijkstra, Lamport, Alan Kay, Martin-Lof, Jean-Yves Girard, Judea Pearl, Benjamin C. Pierce, and Adam Chlipala, alongside practical experience using Lean 4.
+- Broader study of non-classical logics and their implications for programming.
+- A live question: whether Prolog- or Datalog-style models of software semantics, combined with neuro-symbolic AI and causal inference, can support automatic root-cause detection and reverse engineering.
+
 ## AI Assistance
 
 This repository uses ChatGPT-5.4 Extra High for AI-assisted knowledge work.
