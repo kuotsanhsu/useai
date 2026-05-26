@@ -1,4 +1,4 @@
 interface:
   display_name: "Planning"
   short_description: "Coordinate broad work and research with PLAN.md"
-  default_prompt: "Use $planning to structure this broad task or research seed, confirm the outline, and coordinate it with PLAN.md."
+  default_prompt: "Use useai:planning to structure this broad task or research seed, confirm the outline, and coordinate it with PLAN.md."

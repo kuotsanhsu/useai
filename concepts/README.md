@@ -28,4 +28,5 @@ Relevant fields include philosophy, psychology, economics, psychoanalysis, compu
 - [Programming Hyperreality](programming-hyperreality.md)
 - [Retrieval and Action System](retrieval-and-action-system.md)
 - [Soundness, Validity, And Software Evidence](soundness-validity-and-software-evidence.md)
+- [Stepanov, Generic Programming, And Code-As-Pseudocode](stepanov-generic-programming-and-code-as-pseudocode.md)
 - [Symbolic Reasoning And Meaning](symbolic-reasoning-and-meaning.md)

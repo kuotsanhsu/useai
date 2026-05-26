@@ -31,6 +31,7 @@ The repository is organized as a retrieval and action system:
 - `README.md` is the public entry point.
 - `docs/` contains shared process and attention-management rules.
 - `skills/` contains reusable workflows.
+- `.codex-plugin/` and `.agents/plugins/` make this repository installable as a Codex plugin.
 - `projects/`, `concepts/`, and `observations/` contain durable knowledge.
 
 ## Sync Rule

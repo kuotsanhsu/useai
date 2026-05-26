@@ -6,6 +6,8 @@ source:
   - user-thesis: "Different domains need different formal languages as pseudocode because each language exposes different semantic distinctions."
   - source-note: "cppreference C behavior categories"
   - source-note: "C11 draft N1570"
+  - source-note: "Alexander Stepanov and C++ generic programming references"
+  - source-note: "Bjarne Stroustrup C++ multi-paradigm references"
   - source-note: "Rust Book"
   - source-note: "Zig Language Reference"
   - source-note: "VHDL execution model reference"
@@ -15,7 +17,7 @@ source:
   - source-note: "Dyalog APL, Haskell, OCaml, Lean, Rocq, and Agda documentation"
 tags: [software-engineering, pseudocode, specification, formal-methods, programming-languages, notation]
 depends_on: [code-as-pseudocode-and-executable-specs]
-related: [code-as-pseudocode-translation-protocol, limits-of-language-and-formal-thought, glossary]
+related: [code-as-pseudocode-translation-protocol, stepanov-generic-programming-and-code-as-pseudocode, limits-of-language-and-formal-thought, glossary]
 used_by: [code-as-pseudocode-and-executable-specs]
 supersedes: []
 ---
@@ -33,6 +35,10 @@ The user's examples mostly hold up, with important qualifications.
 - C and assembly
   - Good for: bit layouts, integer operations, ABI boundaries, memory representation, and instruction-near examples.
   - Caution: C is not portable assembly. It has an abstract machine and undefined, unspecified, and implementation-defined behavior; exact CPU semantics need fixed compiler, flags, target, ABI, and often assembly or ISA notation. The C behavior categories are summarized by [cppreference](https://docs.cppreference.com/w/c/language/behavior.html), and the C11 draft is available as [N1570](https://www.sigbus.info/n1570).
+
+- C++ and STL-style generic programming
+  - Good for: efficient algorithms, data-structure families, value semantics, iterator/range boundaries, type requirements, concept laws, complexity requirements, and multi-paradigm examples where representation and abstraction must stay in contact. C++ is especially useful when a code-as-pseudocode artifact should carry both the mathematical shape of an algorithm and the implementation costs that make it industrially meaningful.
+  - Caution: C++ is useful pseudocode only under discipline: state the language subset, standard version, concept requirements, complexity obligations, ownership assumptions, and undefined-behavior boundaries. Do not let template machinery, overload cleverness, or object-oriented ceremony hide the algorithm. See [Stepanov, Generic Programming, And Code-As-Pseudocode](stepanov-generic-programming-and-code-as-pseudocode.md).
 
 - Rust
   - Good for: ownership, borrowing, lifetimes, aliasing discipline, move semantics, and resource protocols checked by the compiler. The Rust Book's ownership and borrowing chapters are the right entry point: [ownership](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html) and [references and borrowing](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html).

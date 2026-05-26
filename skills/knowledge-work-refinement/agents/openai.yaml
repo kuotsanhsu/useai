@@ -1,4 +1,4 @@
 interface:
   display_name: "Knowledge Work Refinement"
   short_description: "Refine drafts and observe thought patterns"
-  default_prompt: "Use $knowledge-work-refinement to refine these notes and observe recurring thought patterns without judging them."
+  default_prompt: "Use useai:knowledge-work-refinement to refine these notes and observe recurring thought patterns without judging them."

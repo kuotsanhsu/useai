@@ -26,11 +26,12 @@ source:
   - source-note: "Alan Kay and Adele Goldberg, Personal Dynamic Media"
   - source-note: "Edsger Dijkstra, Guarded Commands and Notes on Structured Programming"
   - source-note: "Edsger Dijkstra, On the Cruelty of Really Teaching Computing Science"
+  - source-note: "Alexander Stepanov, STL and generic programming references"
   - source-note: "QuickCheck and property-based testing references"
   - source-note: "Translation validation, CompCert, Csmith, and LLM code translation references"
 tags: [software-engineering, pseudocode, specification, formal-methods, programming-languages, executable-specification, notation]
 depends_on: [code-simulacra-and-formal-shadows, english-as-programming-interface, soundness-validity-and-software-evidence]
-related: [code-as-pseudocode-domain-language-map, code-as-pseudocode-translation-protocol, limits-of-language-and-formal-thought, programming-hyperreality, symbolic-reasoning-and-meaning, causal-code-intelligence, glossary]
+related: [code-as-pseudocode-domain-language-map, code-as-pseudocode-translation-protocol, stepanov-generic-programming-and-code-as-pseudocode, limits-of-language-and-formal-thought, programming-hyperreality, symbolic-reasoning-and-meaning, causal-code-intelligence, glossary]
 used_by: [code-as-pseudocode-translation-protocol]
 supersedes: []
 ---
@@ -54,6 +55,7 @@ Free-form notation is not automatically more expressive. It can be more convenie
 For many concepts, a real language is a better pseudocode:
 
 - C for the C abstract machine and bit-level interfaces; assembly or ISA notation for explicit instruction semantics;
+- C++ for STL-style generic algorithms, value semantics, type requirements, and efficient abstraction when algorithmic concepts are the point;
 - Rust for ownership, borrowing, lifetimes, and aliasing discipline;
 - Zig for explicit memory and allocation choices;
 - SystemVerilog or VHDL for event-based programming and discrete-event simulation, with hardware as the central industrial domain;
@@ -95,9 +97,11 @@ Alan Kay supports the thesis indirectly. In [The Early History of Smalltalk](htt
 
 Dijkstra supports the thesis through discipline, derivation, and semantic control. In [Concern for Correctness as a Guiding Principle for Program Composition](https://www.cs.utexas.edu/~EWD/transcriptions/EWD02xx/EWD288.html), he describes a rough sketch as an abstract version of the final program, or even as the program for a hypothetical machine whose assumed primitives are refined later. In [Structured Programming](https://www.cs.utexas.edu/~EWD/transcriptions/EWD02xx/EWD268.html), he argues that correctness depends on reasoning from the static program text, not sampling executions. In [Guarded Commands](https://www.cs.utexas.edu/~EWD/transcriptions/EWD04xx/EWD472.html), he gives predicate-transformer machinery for program derivation. But Dijkstra would likely resist a loose "AI will translate it" framing. For him, the translation must preserve derivable meaning, not merely plausible behavior.
 
-Lamport is the direct lineage. His [PlusCal paper](https://lamport.org/pubs/pluscal.pdf) explicitly says algorithms are different from programs, that ordinary pseudocode has no precise meaning and can only be checked by hand, and that PlusCal can replace pseudocode by translating to TLA+ for model checking and formal reasoning. His [high-level TLA+ overview](https://lamport.azurewebsites.net/tla/high-level-view.html) also gives the key guardrail: model above the code level, because coding skill cannot repair a bad high-level design.
+Lamport is the direct specification lineage. His [PlusCal paper](https://lamport.org/pubs/pluscal.pdf) explicitly says algorithms are different from programs, that ordinary pseudocode has no precise meaning and can only be checked by hand, and that PlusCal can replace pseudocode by translating to TLA+ for model checking and formal reasoning. His [high-level TLA+ overview](https://lamport.azurewebsites.net/tla/high-level-view.html) also gives the key guardrail: model above the code level, because coding skill cannot repair a bad high-level design.
 
 The important tension is that Lamport also cautions against ordinary programming languages as algorithm languages. This does not refute code-as-pseudocode. It refines it: the right artifact may be executable code, but it may also be a model, proof, query, abstract machine, hardware-description fragment, relational schema, or purpose-built algorithm language like PlusCal.
+
+Stepanov is the direct C++ and generic-programming lineage. His STL work shows how actual C++ can encode efficient algorithmic theories when concepts, laws, complexity requirements, and value semantics are made explicit. For the focused treatment, see [Stepanov, Generic Programming, And Code-As-Pseudocode](stepanov-generic-programming-and-code-as-pseudocode.md).
 
 ## Core Distinctions
 

@@ -108,6 +108,11 @@ Status labels:
   - Meaning: the use of natural language, mathematical notation, programming languages, specification languages, proof assistants, or other symbolic media as tools that shape, revise, constrain, and communicate thought rather than merely record finished thought.
   - Canonical note: `concepts/limits-of-language-and-formal-thought.md`.
 
+- Generic programming
+  - Status: standard term, locally developed.
+  - Meaning: the Stepanov/Musser programming method of starting with algorithms, deriving the weakest useful requirements, organizing those requirements as concepts, and implementing efficient reusable components against those concepts. In this repo, it is the C++/STL lineage of code-as-pseudocode.
+  - Canonical note: `concepts/stepanov-generic-programming-and-code-as-pseudocode.md`.
+
 - Claim hygiene
   - Status: local adaptation.
   - Meaning: the practice of stating what a formal artifact, test, proof, model, benchmark, or source actually licenses, and not letting a narrow result imply a broader claim than the evidence supports.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Code-As-Pseudocode Analysis"
+  short_description: "Map semantic anchors to implementation and validation evidence"
+  default_prompt: "Use useai:code-as-pseudocode-analysis to analyze this codebase as code-as-pseudocode."

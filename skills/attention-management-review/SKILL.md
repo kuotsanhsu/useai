@@ -1,6 +1,6 @@
 ---
 name: attention-management-review
-description: Review and improve this repository's attention-management system. Use when Codex is asked to audit, copy, enforce, shorten, or repair AGENTS.md routing, onboarding, directory layout, documentation style, local skills, PLAN.md use, knowledge-base retrieval paths, meta-review after broad planning work, or broad repo/docs consistency.
+description: Review and improve this repository's attention-management system. Use when Codex is asked to audit, copy, enforce, shorten, or repair AGENTS.md routing, onboarding, directory layout, documentation style, local skills, PLAN.md use, knowledge-base retrieval paths, static plugin routing, meta-review after broad planning work, or broad repo/docs consistency.
 ---
 
 # Attention Management Review
@@ -20,6 +20,7 @@ Use this skill as the repository meta-review. Keep the repository usable under a
    - `docs/directory-layout.md`
    - `docs/documentation-style.md`
    - relevant `skills/*/SKILL.md`
+   - `skills/useai-plugin-maintenance/SKILL.md` when plugin-facing behavior or static install routing is in scope
 
 3. Identify canonical sources before judging duplication. Repetition is allowed when it acts as a local reminder, but it must point back to the same source of truth and must not change the rule.
 
@@ -27,14 +28,16 @@ Use this skill as the repository meta-review. Keep the repository usable under a
    - hot routing should be short and prominent;
    - focused policy should live in focused docs;
    - reusable workflows should live in skills;
-   - durable evidence and reflection should have retrieval paths through README, indexes, or source notes.
+   - durable evidence and reflection should have retrieval paths through README, indexes, or source notes;
+   - static plugin metadata should route to canonical source files instead of copied artifacts.
 
 5. Check high-level mandate handling:
    - important mandates and insights should be visible in hot or focused documents;
    - detailed support can live colder, but must be linked;
+   - repo-as-plugin implications should be considered when skills, selected references, docs, or plugin metadata change;
    - Markdown edits should improve the attention hierarchy instead of scattering guidance.
 
-6. Check file purpose and reachability. New files should have an obvious bucket, purpose, and retrieval path. Do not delete or move files solely because they look weakly referenced; record the uncertainty or ask if ownership is unclear.
+6. Check file purpose and reachability. New files should have an obvious bucket, purpose, and retrieval path. Static plugin skills should use canonical repo files and avoid target-project dependency on this checkout's absolute path. Do not delete or move files solely because they look weakly referenced; record the uncertainty or ask if ownership is unclear.
 
 7. Check for unexpected unresolved open questions, open decisions, or ambiguous ownership that should have been caught by planning. Treat meta-review as a late safeguard, not the normal place to manage planning questions. Ask the user to resolve them, explicitly defer them, or restart planning if the issue changes scope. When open questions have been resolved, verify that the stale open-question section was removed and the answers were written into the appropriate normal location instead of left as a resolved-question ledger.
 
@@ -51,6 +54,7 @@ Use this mode when the user asks for a whole-project meta-review.
 - Treat the review as deep by default; use `skills/planning/SKILL.md` and `PLAN.md` before execution.
 - Review all non-ignored files present in the worktree, including tracked, staged, unstaged, and untracked files. Treat `.gitignore` as the explicit exclusion boundary.
 - Use read-only agents for parallel audits when that can speed up docs, skills, concepts, projects, observations, or worktree-hygiene review.
+- Include static plugin metadata and plugin-facing skills in scope, and judge them against source clarity, installability, and plugin portability.
 - Make scoped fixes automatically when findings are clear, but do not automatically stage or unstage non-`PLAN.md` files.
 
 ## Review Checklist
@@ -60,6 +64,7 @@ Use this mode when the user asks for a whole-project meta-review.
 - Detailed policy is not duplicated in `AGENTS.md`.
 - New or changed files have a retrieval path.
 - README, onboarding, docs, skills, and knowledge-base notes do not describe conflicting workflows.
+- Planning and meta-review consider that this repo is also the static `useai` Codex plugin.
 - Broad work uses `PLAN.md` only as temporary coordination.
 - Planning and plan-review behavior is routed through `skills/planning` and `skills/plan-review`.
 - After broad plan-driven work touches many files, a meta-review checks whether high-level mandates and insights are captured, refined, and highlighted.
@@ -72,6 +77,8 @@ Use this mode when the user asks for a whole-project meta-review.
 - Uncertainty remains visible instead of becoming a hidden requirement.
 - Reusable lessons are stated directly without unnecessary source framing.
 - Changes to `concepts/attention-management.md` and `docs/attention-management.md` are checked against each other.
+- Changes to plugin-facing skills, selected references, or plugin metadata are reflected in canonical source files and validated through `skills/useai-plugin-maintenance/SKILL.md`.
+- Plugin skills use repo-relative references and avoid absolute paths to this checkout.
 
 ## Output
 

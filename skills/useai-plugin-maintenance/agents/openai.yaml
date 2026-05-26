@@ -1,0 +1,4 @@
+interface:
+  display_name: "Useai Plugin Maintenance"
+  short_description: "Maintain this repo as a static Codex plugin"
+  default_prompt: "Use useai:useai-plugin-maintenance to update this repo's static plugin routing."

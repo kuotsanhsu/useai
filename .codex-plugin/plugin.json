@@ -1,0 +1,31 @@
+{
+  "name": "useai",
+  "version": "0.2.0",
+  "description": "Reusable knowledge-work skills and conceptual references for Codex.",
+  "author": {
+    "name": "Gordon H"
+  },
+  "keywords": [
+    "knowledge-work",
+    "planning",
+    "knowledge-base",
+    "attention-management",
+    "code-as-pseudocode"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "useai",
+    "shortDescription": "Planning, KB capture, refinement, and analysis workflows.",
+    "longDescription": "Portable Codex skills and references served directly from the useai repository. Install this repo as a local plugin to use its checked-in skills, concepts, and docs from other projects without absolute-path references in those projects.",
+    "developerName": "Gordon H",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive"
+    ],
+    "defaultPrompt": [
+      "Plan broad project work",
+      "Capture durable project knowledge",
+      "Analyze code as pseudocode"
+    ]
+  }
+}

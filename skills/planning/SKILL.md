@@ -7,7 +7,7 @@ description: Manage broad multi-step work in this repository with temporary PLAN
 
 Use `PLAN.md` as temporary coordination for broad active work. Do not let it become a second knowledge base, TODO dump, or specification.
 
-Planning should preserve, sharpen, and apply high-level mandates and insights while respecting the attention hierarchy: hot routing in `AGENTS.md` and `PLAN.md`, focused policy in `docs/`, reusable workflows in `skills/`, and durable knowledge in `projects/`, `concepts/`, or `observations/`.
+Planning should preserve, sharpen, and apply high-level mandates and insights while respecting the attention hierarchy: hot routing in `AGENTS.md` and `PLAN.md`, focused policy in `docs/`, reusable workflows in `skills/`, durable knowledge in `projects/`, `concepts/`, or `observations/`, and static plugin routing in `.codex-plugin/` and `.agents/plugins/`.
 
 ## When To Use PLAN.md
 
@@ -17,6 +17,7 @@ Suggest or update `PLAN.md` when a task has at least two of these properties:
 - will likely span multiple turns;
 - has order-dependent decisions;
 - needs temporary decisions before promotion into durable docs or skills;
+- may affect plugin-facing skills, references, metadata, or install routing;
 - may benefit from sidecar audits or delegated work after user approval.
 
 Do not create `PLAN.md` for one-file edits, narrow wording changes, simple reviews, isolated README updates, or direct skill edits with a clear scope.
@@ -74,7 +75,8 @@ Do not stage or unstage unrelated files as part of this loop. If `PLAN.md` conta
    - assumptions;
    - likely files or areas;
    - decisions that need user input;
-   - what may be promoted to durable docs, skills, concepts, projects, or observations.
+   - what may be promoted to durable docs, skills, concepts, projects, or observations;
+   - whether the static `useai` plugin may need skill, reference, metadata, marketplace, or validation updates.
 3. Keep the plan short and active:
    - goal;
    - invariants;
@@ -85,6 +87,7 @@ Do not stage or unstage unrelated files as part of this loop. If `PLAN.md` conta
    - open decisions;
    - open questions raised during research or delegated work;
    - delegated work, if authorized;
+   - plugin/export impact, if any;
    - promotion rules.
 4. Update the current step as work progresses.
 5. Promote durable material out of `PLAN.md`:
@@ -92,8 +95,9 @@ Do not stage or unstage unrelated files as part of this loop. If `PLAN.md` conta
    - shared process -> `docs/`;
    - cross-project ideas -> `concepts/`;
    - project state -> `projects/`;
-   - self-observation or observed lessons -> `observations/`.
-6. After broad planning work touches several files, use `skills/attention-management-review/SKILL.md` as a meta-review to check whether Markdown changes captured, refined, and highlighted high-level mandates and insights, and to check duplication, routing clarity, stale links, and retrieval paths.
+   - self-observation or observed lessons -> `observations/`;
+   - portable plugin behavior -> `skills/`, `concepts/`, `docs/`, `.codex-plugin/plugin.json`, `.agents/plugins/marketplace.json`, or `skills/useai-plugin-maintenance/SKILL.md`.
+6. After broad planning work touches several files, use `skills/attention-management-review/SKILL.md` as a meta-review to check whether Markdown changes captured, refined, and highlighted high-level mandates and insights, and to check duplication, routing clarity, stale links, retrieval paths, static plugin impact, and validation coverage.
 7. Every completed plan sequence must use `skills/plan-review/SKILL.md` as the closeout step. Do this even when the work seemed straightforward, because the review is what catches scope drift, leftover temporary artifacts, and missed promotion.
 8. After plan review, delete `PLAN.md` or shrink it to only live unresolved work.
 
@@ -116,5 +120,7 @@ If a delegated agent raises a genuine new open question that affects scope, sour
 - Keep `PLAN.md` useful for action, not exhaustive history.
 - Do not automatically stage or unstage non-`PLAN.md` changes. Report changed files and leave non-`PLAN.md` index state to the user.
 - Treat the Markdown corpus as a data-driven attention hierarchy: hot information should stay short and easy to load; colder information should remain reachable through backlinks.
-- Do not finish a completed plan without running the plan-review skill.
+- When the repo itself is being developed as a plugin source, plan for both audiences: future contributors using this checkout and Codex instances using the static `useai` plugin.
+- If plugin-facing skills, selected references, or plugin metadata change, validate the static plugin through `skills/useai-plugin-maintenance/SKILL.md`.
+- Do not finish a completed plan without running `useai:plan-review`.
 - Mention in the final answer whether `PLAN.md` was created, updated, shrunk, removed, or left unchanged.

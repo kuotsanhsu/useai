@@ -26,6 +26,7 @@ The rule is simple: when an action crosses a boundary, read the boundary documen
 - Broad multi-step work: use `skills/planning/SKILL.md`.
 - Completed PLAN.md-driven work: use `skills/plan-review/SKILL.md`.
 - Broad consistency review: use `skills/attention-management-review/SKILL.md`.
+- Static Codex plugin maintenance: use `skills/useai-plugin-maintenance/SKILL.md`.
 
 ## Broad Work
 
@@ -55,6 +56,7 @@ When editing a file, check whether the change affects a hotter or more canonical
 - skill map or first-read changes may require `docs/onboarding.md`;
 - public-facing purpose or structure changes may require `README.md`;
 - reusable workflow changes belong in a skill, not `AGENTS.md`.
+- plugin-facing workflow changes may require validating `.codex-plugin/plugin.json` and `.agents/plugins/marketplace.json`.
 
 ## Concept And Practice Sync
 

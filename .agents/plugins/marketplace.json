@@ -1,0 +1,20 @@
+{
+  "name": "useai",
+  "interface": {
+    "displayName": "useai"
+  },
+  "plugins": [
+    {
+      "name": "useai",
+      "source": {
+        "source": "local",
+        "path": "./plugins/useai"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

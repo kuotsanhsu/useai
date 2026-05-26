@@ -1,4 +1,4 @@
 interface:
   display_name: "Conversational KB Builder"
   short_description: "Capture durable knowledge from conversation"
-  default_prompt: "Use $conversational-kb-builder to turn this conversation into durable knowledge-base notes."
+  default_prompt: "Use useai:conversational-kb-builder to turn this conversation into durable knowledge-base notes."
